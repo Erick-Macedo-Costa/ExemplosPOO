@@ -5,20 +5,24 @@ public class Conta {
     double saldo;
     double limite;
 
-    public String cliente(){
-        return "Saldo: " + cliente;
+    public String cliente(double saldo){
+        return "Cliente: " + cliente;
     }
 
-    public double sacar(){
-        return saldo;
+    public String sacar(double saldo){
+        return ( saldo >= 1 ) ? " pode sacar" : " não pode sacar";
     }
 
-    public double limite(){
+    public double limite(double saldo){
         return  limite;
     }
 
     public String dados(){
-        return "Cliente: " + cliente + "\n" + "Saldo: " + saldo + "\n" + "Limite: " + limite;
+        return cliente(saldo) + "\n" + "Saldo: " + saldo + "\n" + "Limite: " + limite(saldo);
+    }
+
+    public String dados2(double saldo){
+        return cliente(saldo) + sacar(saldo);
     }
 
 }
