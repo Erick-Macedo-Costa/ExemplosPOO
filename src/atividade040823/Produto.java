@@ -6,16 +6,15 @@ public class Produto {
     double percentualDesconto;
 
     public String dados() {
-        return "Unidade da " + descricao + "e " + valor + " reais" + "\n" + desconto() + "\n" + total();
+        return "Unidade da " + descricao + "e " + valor + " reais" + "\n" + "Desconto: "+ desconto() + "\n"+ "Total: " + total();
     }
 
-    public String desconto() {
-        return "Desconto: " + percentualDesconto   ;
+    public double desconto() {
+        return  percentualDesconto   ;
     }
 
-
-    public String total() {
-        return "Total: " + (valor - percentualDesconto);
+    public double total() {
+        return valor - percentualDesconto;
     }
 
 }
