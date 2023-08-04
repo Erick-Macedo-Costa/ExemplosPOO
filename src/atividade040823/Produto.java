@@ -3,22 +3,19 @@ package atividade040823;
 public class Produto {
     String descricao;
     double valor;
+    double percentualDesconto;
 
-    public String dados(double desconto) {
-        return "Unidade da " + descricao + "e " + valor + " reais" + "\n" + desconto(desconto) + "\n" + total(desconto);
+    public String dados() {
+        return "Unidade da " + descricao + "e " + valor + " reais" + "\n" + desconto() + "\n" + total();
     }
 
-    public String desconto(double desconto) {
-        return "Desconto: " + desconto;
+    public String desconto() {
+        return "Desconto: " + percentualDesconto   ;
     }
 
 
-    public String total(double desconto) {
-        return "Total: " + valorDesconto(desconto) ;
-    }
-
-    public double valorDesconto(double desconto) {
-        return valor - desconto;
+    public String total() {
+        return "Total: " + (valor - percentualDesconto);
     }
 
 }
