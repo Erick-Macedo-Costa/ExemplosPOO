@@ -26,5 +26,6 @@ public class Principal {
         conta1.saldo = 1000;
         conta1.limite = 1000;
         System.out.println(conta1.dados());
+        System.out.println(conta1.dados2(1000));
     }
 }
