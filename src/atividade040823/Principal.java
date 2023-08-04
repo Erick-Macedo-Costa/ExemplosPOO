@@ -2,6 +2,7 @@ package atividade040823;
 
 public class Principal {
     public static void main(String[] args) {
+        //EXERCICIO 1
         Produto produto1 = new Produto();
         produto1.descricao = "Maça ";
         produto1.valor = 5;
@@ -15,5 +16,9 @@ public class Principal {
         produto2.valor = 2;
         produto2.percentualDesconto = 0.1;
         System.out.println(produto2.dados());
+        //FIM DO EXERCICIO 1
+
+        //EXERCICIO 2
+
     }
 }
