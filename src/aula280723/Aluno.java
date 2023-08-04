@@ -13,6 +13,8 @@ public class Aluno {
     }
 
     String situacao(){
+
+        //condiçao ? valor_se_verdadeiro : valor_se_falso
         return ( media() < 6 ) ? "Reprovado!" : "Aprovado";
     }
 
