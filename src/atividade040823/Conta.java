@@ -10,11 +10,15 @@ public class Conta {
     }
 
     public double sacar(){
-        return "Saldo: " + saldo;
+        return saldo;
     }
 
     public double limite(){
         return  limite;
+    }
+
+    public String dados(){
+        return "Cliente: " + cliente + "\n" + "Saldo: " + saldo + "\n" + "Limite: " + limite;
     }
 
 }

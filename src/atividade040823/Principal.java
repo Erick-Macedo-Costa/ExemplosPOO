@@ -18,7 +18,13 @@ public class Principal {
         System.out.println(produto2.dados());
         //FIM DO EXERCICIO 1
 
-        //EXERCICIO 2
+        System.out.println("\n");
 
+        //EXERCICIO 2
+        Conta conta1 = new Conta();
+        conta1.cliente = "João";
+        conta1.saldo = 1000;
+        conta1.limite = 1000;
+        System.out.println(conta1.dados());
     }
 }
