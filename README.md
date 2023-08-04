@@ -9,3 +9,6 @@ POO (objeto)
 
 Classes
 	Representação de um conjunto de objetos que compartilham a mesma estrutura de atributos, métodos e relacionamentos. 
+ 
+Condicional alternado (IF de outro jeito)
+ 	condiçao ? valor_se_verdadeiro : valor_se_falso
