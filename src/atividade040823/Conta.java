@@ -5,24 +5,28 @@ public class Conta {
     double saldo;
     double limite;
 
-    public String cliente(double saldo){
-        return "Cliente: " + cliente;
+    public Conta(String cliente, double saldo, double limite) {
+        this.cliente = cliente;
+        this.saldo = saldo;
+        this.limite = limite;
     }
 
-    public String sacar(double saldo){
-        return ( saldo >= 1 ) ? " pode sacar" : " não pode sacar";
+    public void sacar(double valor) {
+        if (valor > saldo + limite) {
+            System.out.println("Saldo insuficiente!");
+        } else {
+            saldo -= valor;
+            System.out.println("Saque realizado. Saldo atual: " + saldo);
+        }
+        //return; (valor > saldo + limite) ? "Saldo insuficiente!" : "Saque realizado. Saldo atual: ";
     }
 
-    public double limite(double saldo){
-        return  limite;
+    public String depositar(double valor) {
+        saldo += valor;
+        return  "Depósito realizado. Saldo atual: " + saldo ;
     }
 
-    public String dados(){
-        return cliente(saldo) + "\n" + "Saldo: " + saldo + "\n" + "Limite: " + limite(saldo);
+    public String retornarDados() {
+        return "Cliente: " + cliente + ", Saldo: " + saldo + ", Limite: " + limite;
     }
-
-    public String dados2(double saldo){
-        return cliente(saldo) + sacar(saldo);
-    }
-
 }
