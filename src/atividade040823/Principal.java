@@ -21,10 +21,10 @@ public class Principal {
         System.out.println("\n");
 
         //EXERCICIO 2
-        Conta conta1 = new Conta("João ", 1000, 500);
+        Conta conta1 = new Conta("João ", 0, 500);
         System.out.println(conta1.retornarDados());
         conta1.sacar(700);
-        conta1.depositar(200);
+        conta1.depositar(0);
         System.out.println("Novos dados da conta 1: " + "\n" + conta1.retornarDados());
 
         System.out.println("\n");
