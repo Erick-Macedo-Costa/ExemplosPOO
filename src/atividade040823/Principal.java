@@ -22,18 +22,18 @@ public class Principal {
 
         //EXERCICIO 2
         Conta conta1 = new Conta("João ", 0, 500);
-        System.out.println(conta1.retornarDados());
+        System.out.println(conta1.dados());
         conta1.sacar(700);
         conta1.depositar(0);
-        System.out.println("Novos dados da conta 1: " + "\n" + conta1.retornarDados());
+        System.out.println("Novos dados da conta 1: " + "\n" + conta1.dados());
 
         System.out.println("\n");
 
         Conta conta2 = new Conta("Maria ", 2000, 1000);
-        System.out.println(conta2.retornarDados());
+        System.out.println(conta2.dados());
         conta2.sacar(3000);
         conta2.depositar(500);
-        System.out.println("Novos dados da conta 2: " + "\n" + conta2.retornarDados());
+        System.out.println("Novos dados da conta 2: " + "\n" + conta2.dados());
 
     }
 }

@@ -26,7 +26,7 @@ public class Conta {
         return  "Depósito realizado. Saldo atual: " + saldo ;
     }
 
-    public String retornarDados() {
+    public String dados() {
         return "Cliente: " + cliente + ", Saldo: " + saldo + ", Limite: " + limite;
     }
 }
