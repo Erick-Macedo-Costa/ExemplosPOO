@@ -20,7 +20,4 @@ public class Cliente {
         return "Nome: " + nome + "\n" + "Profissão: " + profissao + "\n" + "Renda Mensal: " + rendaMensal + "\n" + "Valor do Empréstimo: " + valorEmprestimo;
     }
 
-    public int parcelas(){
-        return parcelas;
-    }
 }
