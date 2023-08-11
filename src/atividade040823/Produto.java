@@ -10,11 +10,11 @@ public class Produto {
     }
 
     public double desconto() {
-        return  percentualDesconto   ;
+        return  percentualDesconto / 100 * valor  ;
     }
 
     public double total() {
-        return valor - percentualDesconto;
+        return valor - desconto();
     }
 
 }
