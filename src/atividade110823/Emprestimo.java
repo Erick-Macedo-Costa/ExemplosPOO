@@ -9,8 +9,8 @@ public class Emprestimo {
         this.taxaJuros = taxaJuros;
     }
 
-    public String dados() {
-        return cliente.dados()  + "\n" + "Valor Total: " + jurosAno();
+    public String aprovaçao() {
+        return (cliente.valorEmprestimo > cliente.rendaMensal * 0.3) ? "Emprestimo negado" : "Emprestimo aceito";
     }
 
     public Double jurosMes(){
