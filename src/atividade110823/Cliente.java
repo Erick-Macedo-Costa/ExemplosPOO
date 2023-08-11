@@ -13,7 +13,7 @@ public class Cliente {
         this.profissao = profissao;
         this.rendaMensal = rendaMensal;
         this.valorEmprestimo = valorEmprestimo;
-        this.parcelas = parcelas;
+        Cliente.parcelas = parcelas;
     }
 
     public String dados() {
