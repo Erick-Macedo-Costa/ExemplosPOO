@@ -1,4 +1,4 @@
-package atividade040823;
+package atividade1;
 
 public class Principal {
     public static void main(String[] args) {

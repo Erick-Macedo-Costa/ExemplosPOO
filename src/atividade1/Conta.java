@@ -1,4 +1,4 @@
-package atividade040823;
+package atividade1;
 
 public class Conta {
     String cliente;

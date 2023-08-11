@@ -1,4 +1,4 @@
-package atividade110823;
+package atividade2;
 
 public class Emprestimo {
     Cliente cliente;

@@ -1,4 +1,4 @@
-import aula040823.PessoaFisica;
+import aula1.PessoaFisica;
 import aula280723.Aluno;
 
 public class Main {
