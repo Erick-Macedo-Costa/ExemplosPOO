@@ -10,5 +10,10 @@ public class PrincipalFormulas {
         r1.base = 5;
         r1.altura = 10;
         System.out.println(r1.dadosRetangulo());
+
+        Triangulo t1 = new Triangulo();
+        t1.base = 5;
+        t1.altura = 10;
+        System.out.println(t1.dadosTriangulo());
     }
 }
