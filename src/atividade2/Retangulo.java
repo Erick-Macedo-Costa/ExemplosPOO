@@ -12,4 +12,8 @@ public class Retangulo {
         return 2 * (base + altura);
     }
 
+    public String dadosRetangulo(){
+        return "Dados do Retangulo:" + "\nÁrea: " + area() + "\nPerímetro: " + perimetro();
+    }
+
 }
