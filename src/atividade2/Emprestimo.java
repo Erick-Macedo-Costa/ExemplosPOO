@@ -17,12 +17,15 @@ public class Emprestimo {
         return cliente.valorEmprestimo /  cliente.parcelas;
     }
 
+    public double calculoJuros() {
+        return taxaJuros / 100;
+    }
+
 
     public double valorParcelas() {
         double valorParcela = valorParcelaMensal();
-        double calculoJuros = taxaJuros / 100;
         for (int i = 0; i < cliente.parcelas; i++) {
-            valorParcela += valorParcela * calculoJuros;
+            valorParcela += valorParcela * calculoJuros();
         }
         return valorParcela;
     }
