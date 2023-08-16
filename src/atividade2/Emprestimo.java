@@ -14,14 +14,14 @@ public class Emprestimo {
     }
 
     public double valorParcelaMensal(){
-        return cliente.valorEmprestimo / Cliente.parcelas;
+        return cliente.valorEmprestimo /  cliente.parcelas;
     }
 
 
     public double valorParcelas() {
         double valorParcela = valorParcelaMensal();
         double calculoJuros = taxaJuros / 100;
-        for (int i = 0; i < Cliente.parcelas; i++) {
+        for (int i = 0; i < cliente.parcelas; i++) {
             valorParcela += valorParcela * calculoJuros;
         }
         return valorParcela;
@@ -29,14 +29,14 @@ public class Emprestimo {
 
     public String totalParcelas() {
         String parcelas = "";
-        for (int i = 0; i < Cliente.parcelas; i++) {
+        for (int i = 0; i < cliente.parcelas; i++) {
             parcelas += (i + 1) + " Parcela: R$" + valorParcelas() + "\n";
         }
         return parcelas ;
     }
 
     public String ValorTotalEmprestimo() {
-        return "Valor do empréstimo: " + valorParcelas() * Cliente.parcelas;
+        return "Valor do empréstimo: " + valorParcelas() * cliente.parcelas;
     }
 
     public String dados(){
@@ -45,7 +45,7 @@ public class Emprestimo {
         if (aprovacao.equals("Emprestimo negado")) {
             return aprovacao;
         } else {
-            return  "\n" + aprovacao + "\n" + "Total de parcelas: " + Cliente.parcelas + "\n" + ValorTotalEmprestimo() +"\n" + totalParcelas();
+            return  "\n" + aprovacao + "\n" + "Total de parcelas: " + cliente.parcelas + "\n" + ValorTotalEmprestimo() +"\n" + totalParcelas();
         }
     }
 }
