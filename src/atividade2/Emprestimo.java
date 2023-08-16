@@ -1,5 +1,7 @@
 package atividade2;
 
+import java.text.DecimalFormat;
+
 public class Emprestimo {
     Cliente cliente;
     double taxaJuros;
@@ -33,13 +35,13 @@ public class Emprestimo {
     public String totalParcelas() {
         String parcelas = "";
         for (int i = 0; i < cliente.parcelas; i++) {
-            parcelas += (i + 1) + " Parcela: R$" + valorParcelas() + "\n";
+            parcelas += (i + 1) + " Parcela: R$" + DecimalFormat.getCurrencyInstance().format(valorParcelas()) + "\n";
         }
         return parcelas ;
     }
 
     public String ValorTotalEmprestimo() {
-        return "Valor do empréstimo: " + valorParcelas() * cliente.parcelas;
+        return "Valor do empréstimo: " + DecimalFormat.getCurrencyInstance().format(valorParcelas() * cliente.parcelas);
     }
 
     public String dados(){
