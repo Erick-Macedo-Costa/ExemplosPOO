@@ -2,8 +2,8 @@ package atividade3;
 
 public class PrincipalNumeroAleatorio {
     public static void main(String[] args) {
-        Numeros numeros = new Numeros();
-        numeros.jogada();
-        System.out.println(numeros.dados());
+        Numero numero = new Numero();
+        numero.jogada();
+        System.out.println(numero.dados());
     }
 }

@@ -3,7 +3,7 @@ package atividade3;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Numeros {
+public class Numero {
     public int tentativas;
     public Random random = new Random();
     public int numero = random.nextInt(100);
