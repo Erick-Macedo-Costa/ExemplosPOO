@@ -26,7 +26,7 @@ public class Numero {
     }
 
     public String dados() {
-        return "Numero sorteado: " + numero + "\nQuantidade de tentativas: " + tentativas;
+        return "Numero sorteado: " + numero + "\n" + "Quantidade de tentativas: " + tentativas;
     }
 
 
