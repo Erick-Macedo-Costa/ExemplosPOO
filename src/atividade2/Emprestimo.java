@@ -24,7 +24,7 @@ public class Emprestimo {
     }
 
 
-    public double valorParcelas() {
+    public double calculoValorJuros() {
         double valorParcela = valorParcelaMensal();
         for (int i = 0; i < cliente.parcelas; i++) {
             valorParcela += valorParcela * calculoJuros();
@@ -35,13 +35,14 @@ public class Emprestimo {
     public String totalParcelas() {
         String parcelas = "";
         for (int i = 0; i < cliente.parcelas; i++) {
-            parcelas += (i + 1) + " Parcela: R$" + DecimalFormat.getCurrencyInstance().format(valorParcelas()) + "\n";
+            parcelas += (i + 1) + " Parcela: R$" + DecimalFormat.getCurrencyInstance().format(calculoValorJuros()) + "\n";
+            //parcelas += (i + 1) + " Parcela: R$" + String.format() + "\n";
         }
         return parcelas ;
     }
 
     public String ValorTotalEmprestimo() {
-        return "Valor do empréstimo: " + DecimalFormat.getCurrencyInstance().format(valorParcelas() * cliente.parcelas);
+        return "Valor do empréstimo: " + DecimalFormat.getCurrencyInstance().format(calculoValorJuros() * cliente.parcelas);
     }
 
     public String dados(){
