@@ -24,7 +24,9 @@ public class Numeros {
         tentativas++;
     }
 
-   
+    public String dados() {
+        return "Numero sorteado: " + numero + "\nQuantidade de tentativas: " + tentativas;
+    }
 
 
 }
