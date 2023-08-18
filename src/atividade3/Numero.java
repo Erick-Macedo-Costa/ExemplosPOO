@@ -12,6 +12,7 @@ public class Numero {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite um numero de 0 a 100: ");
         int chute = scanner.nextInt();
+        tentativas = 0;
         if (chute == numero) {
             System.out.println("Acertou!");
         } else if (chute > numero) {
