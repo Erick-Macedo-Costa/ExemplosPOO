@@ -9,10 +9,10 @@ public class Pessoa {
 
     public String idade(){
         int idade = 2023 - dataNascimento.getYear();
-        return "Idade: " + idade;
+        return ", " + idade + " anos";
     }
 
     public String dados() {
-        return "Nome: " + nome + idade() + "\n" + endereco.dados();
+        return "Nome: " + nome  + idade() + "\n" + endereco.dados();
     }
 }

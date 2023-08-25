@@ -5,6 +5,6 @@ public class Cidade {
     public String nome;
 
     public String dados() {
-        return "Cidade: " + nome + "\n" +estado.dados() ;
+        return "Cidade: " + nome +estado.dados() ;
     }
 }

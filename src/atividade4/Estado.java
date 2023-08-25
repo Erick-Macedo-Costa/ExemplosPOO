@@ -5,6 +5,6 @@ public class Estado {
     public String sigla;
 
     public String dados() {
-        return "Estado: " + nome + "UF: " + sigla;
+        return ", " + nome +  "\nUF: " + sigla;
     }
 }

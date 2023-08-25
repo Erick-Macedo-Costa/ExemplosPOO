@@ -9,6 +9,6 @@ public class Endereco {
 
 
     public String dados() {
-        return "Logradouro: " + logradouro + "\nBairro: " + barrio + "\nCEP: " + cep + "\nComplemento: " + complemento + "\n" +cidade.dados();
+        return "Endereço: " + logradouro + "\nBairro: " + barrio + "\nCEP: " + cep + "\nComplemento: " + complemento + "\n" +cidade.dados();
     }
 }
