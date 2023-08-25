@@ -1,14 +1,14 @@
 package atividade4;
 
 public class Endereco {
-    private Cidade cidade;
-    private String logradouro;
-    private String barrio;
-    private int cep;
-    private String complemento;
+    public Cidade cidade;
+    public String logradouro;
+    public String barrio;
+    public int cep;
+    public String complemento;
 
 
     public String dados() {
-        return "Logradouro: " + logradouro + "Bairro: " + barrio + "CEP: " + cep + "Complemento: " + complemento;
+        return "Logradouro: " + logradouro + "\nBairro: " + barrio + "\nCEP: " + cep + "\nComplemento: " + complemento + "\n" +cidade.dados();
     }
 }
