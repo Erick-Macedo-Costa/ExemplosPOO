@@ -1,20 +1,18 @@
 package atividade4;
 
-import java.text.DateFormat;
-import java.util.Calendar;
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Pessoa {
-    private Endereco endereco;
-    private String nome;
-    private DateFormat dataNascimento;
+    public Endereco endereco;
+    public String nome;
+    public LocalDate dataNascimento;
 
-
-    public double idade() {
-        return 2023 - dataNascimento.getCalendar().get(Calendar.YEAR);
+    public String idade(){
+        int idade = 2023 - dataNascimento.getYear();
+        return "Idade: " + idade;
     }
 
     public String dados() {
-        return "Nome: " + nome + "Idade: " + idade();
+        return "Nome: " + nome + idade() + "\n" + endereco.dados();
     }
 }
