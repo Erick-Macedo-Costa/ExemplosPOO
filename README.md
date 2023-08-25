@@ -16,3 +16,20 @@ Condicional alternado (IF de outro jeito)
 Classe (
 	É um conjunto de atributos e métodos que definem um objeto
 )
+
+Laços de repetição:
+	For
+	While
+	Do While
+
+for (inicialização; condição; incremento) {
+	// instruções/codigo
+}
+
+while (condição) {
+	// instruções/codigo
+}
+
+do {
+	// instruções/codigo
+} while (condição);
