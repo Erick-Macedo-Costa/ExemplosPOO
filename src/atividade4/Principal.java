@@ -24,7 +24,6 @@ public class Principal {
         estado.nome = "Tocatins";
         estado.sigla = "TO";
 
-
         System.out.println(pessoa.dados());
     }
 }
