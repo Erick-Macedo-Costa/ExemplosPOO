@@ -38,5 +38,5 @@ Associações entre classes
 	Uma Associação define que uma classe faz parte da estrutura de outra classe.
 	Na notação UML é representada por uma linha conectando as classes.
 	(Unidirecional): A classe A contém um atributo da classe B. Já a classe B não possui atributo da classe A.
-	(Unidirecional): A classe B contém um atributo da classe A. Já a classe A não possui atributo da classe B
+	(Bidirecional): A classe A contém um atributo da classe B e a classe B contém um atributo da classe A.
 
