@@ -1,5 +1,7 @@
 package atividade4;
 
+import java.time.LocalDate;
+
 public class Principal {
 
     public static void main(String[] args) {
@@ -9,7 +11,7 @@ public class Principal {
         Estado estado = new Estado();
 
         pessoa.nome = "Erick";
-        pessoa.dataNascimento = java.time.LocalDate.of(2002, 2, 20);
+        pessoa.dataNascimento = LocalDate.of(2002, 2, 20);
         pessoa.endereco = endereco;
 
         endereco.logradouro = "Rua 1, Quadra 1, Lote 1";
