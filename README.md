@@ -34,9 +34,14 @@ do {
 	// instruções/codigo
 } while (condição);
 
+Relacionamento entre classes
+   Os relacionamentos possíveis entre classes são: associação (conectadas entre si), dependência (uma classe depende ou usa outra classe), generalização (uma classe é uma especialização de outra classe).
+
+
+
 Associações entre classes
 	Uma Associação define que uma classe faz parte da estrutura de outra classe.
 	Na notação UML é representada por uma linha conectando as classes.
-	(Unidirecional): A classe A contém um atributo da classe B. Já a classe B não possui atributo da classe A.
-	(Bidirecional): A classe A contém um atributo da classe B e a classe B contém um atributo da classe A.
+
+
 
