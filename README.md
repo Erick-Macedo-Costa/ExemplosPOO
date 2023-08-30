@@ -43,5 +43,9 @@ Associações entre classes
 	Uma Associação define que uma classe faz parte da estrutura de outra classe.
 	Na notação UML é representada por uma linha conectando as classes.
 
+Navegabilidade
+Define o aspecto de visibilidade entre as classes. Formas de navegação: Unidirecional e Bidirecional.
+(Unidirecional): A classe A contém um atributo da classe B. Já a classe B não possui atributo da classe A.
 
+	(Bidirecional): A classe A contém um atributo da classe B e a classe B contém um atributo da classe A.
 
