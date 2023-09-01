@@ -14,7 +14,7 @@ public class Principal {
         pessoa.dataNascimento = LocalDate.of(2002, 2, 20);
         pessoa.endereco = endereco;
 
-        endereco.logradouro = "Rua 1, Quadra 1, Lote 1";
+        endereco.logradouro = "Quadra 111, Av Lo 27, Lote 25, QI 14";
         endereco.barrio = "Centro";
         endereco.cep = 12345678;
         endereco.complemento = "APT 1";
