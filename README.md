@@ -50,3 +50,12 @@ Algumas das principais interfaces de Collection incluem: Set, Queue (filas), Lis
 	List: define uma coleção ordenada que pode conter elementos duplicados.
 	Map: define uma coleção coleção de pares chave-valor, em que cada chave é associada a um valor e não permite chaves duplicadas.
 
+Métodos da classe ArrayList
+	O método add() adiciona elementos ao ArrayList.
+	A versão de um argumento acrescenta seu argumento ao final do ArrayList.
+	A versão de dois argumentos insere um novo elemento na posição especificada.
+	O método size() retorna o número de elementos no ArrayList.
+	O método get() obtém o elemento em um índice especificado.
+	O método remove() exclui um elemento com um valor específico. Uma versão sobrecarregada do método remove o elemento no índice especificado.
+	O método contains() determina se um item está no ArrayList.
+
