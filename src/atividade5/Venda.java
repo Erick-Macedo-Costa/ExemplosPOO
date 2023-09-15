@@ -1,12 +1,13 @@
 package atividade5;
 
-import java.time.LocalDate;
+
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Venda {
     List<Item> itens = new ArrayList<>();
-    LocalDate data;
+    LocalDateTime data;
 
     private double total() {
         double total = 0;
