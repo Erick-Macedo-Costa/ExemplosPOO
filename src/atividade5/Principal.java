@@ -1,6 +1,7 @@
 package atividade5;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Principal {
     public static void main(String[] args) {
@@ -29,7 +30,7 @@ public class Principal {
         item3.quantidade = 2;
 
         Venda venda = new Venda();
-        venda.data = LocalDate.now();
+        venda.data = LocalDateTime.now();
         venda.itens.add(item1);
         venda.itens.add(item2);
         venda.itens.add(item3);
