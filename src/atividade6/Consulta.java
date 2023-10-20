@@ -3,7 +3,7 @@ package atividade6;
 import java.time.LocalDateTime;
 
 public class Consulta {
-     LocalDateTime data;
+     LocalDateTime data = LocalDateTime.now();
      double valor;
      String observacao;
      Medico medico;
