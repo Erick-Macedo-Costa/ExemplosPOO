@@ -38,8 +38,23 @@ public class Principal {
         l2.pessoas.add(f2);
         l2.pessoas.add(c2);
 
-        System.out.println(l1.dados() + "\n");
-        System.out.println(l2.dados() + "\n");
+//        System.out.println(l1.dados() + "\n");
+//        System.out.println(l2.dados() + "\n");
+
+        Locacao locacao1 = new Locacao(v1, c1, f1, 5);
+        Locacao locacao2 = new Locacao(v2, c2, f2, 3);
+        Locacao locacao3 = new Locacao(v3, c1, f1, 2);
+        Locacao locacao4 = new Locacao(v4, c2, f2, 1);
+
+        ArrayList<Locacao> locacoes = new ArrayList<>();
+        locacoes.add(locacao1);
+        locacoes.add(locacao2);
+        locacoes.add(locacao3);
+        locacoes.add(locacao4);
+
+        for (Locacao locacao : locacoes) {
+            System.out.println(locacao.dados() + "\n");
+        }
 
 
 
